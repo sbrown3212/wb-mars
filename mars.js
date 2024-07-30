@@ -50,21 +50,29 @@
 
 // alert(`Cool, so you're bringing ${companionName} the ${companionType}.`);
 
-alert(`NASA has an interior design team offering to outfit your space ship.`);
-alert(`You have a couple of options for the interior decor of your ship. Your options are:
-    A   Sleek, modern minimalism
-    B   Retro/vintage space age
-    C   Victorian-era steampunk
-`);
+// alert(`NASA has an interior design team offering to outfit your space ship.`);
+// alert(`You have a couple of options for the interior decor of your ship. Your options are:
+//     A   Sleek, modern minimalism
+//     B   Retro/vintage space age
+//     C   Victorian-era steampunk
+// `);
 
-let decorChoice = prompt(`Which would you like? (A, B, or C)`);
-decorChoice = decorChoice.toUpperCase();
-let decor;
-if (decorChoice === 'A') {
-    decor = 'modern minimalist';
-} else if (decorChoice === 'B') {
-    decor = 'retro/vintage space age';
-} else if (decorChoice === 'C') {
-    decor = 'victorian-era steampunk';
+// let decorChoice = prompt(`Which would you like? (A, B, or C)`);
+// decorChoice = decorChoice.toUpperCase();
+// let decor;
+// if (decorChoice === 'A') {
+//     decor = 'modern minimalist';
+// } else if (decorChoice === 'B') {
+//     decor = 'retro/vintage space age';
+// } else if (decorChoice === 'C') {
+//     decor = 'victorian-era steampunk';
+// }
+
+// alert(`${username} and ${companionName}, surfing the celestial abyss, in a ${decor} spaceship.`);
+
+let timer = 5;
+while (timer > 0) {
+    alert(`${timer}...`);
+    timer -= 1;
 }
-
+alert(`*** LIFTOFF ***`);
