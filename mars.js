@@ -31,22 +31,40 @@
 //     alert(`Perfect. You'll certainly fit in the spaceship!`);
 // }
 
-alert(`You're allowed to bring one companion animal with you.`);
+// alert(`You're allowed to bring one companion animal with you.`);
 
-let companionType = prompt(`What kind of companion animal would you like to bring?`);
-let companionName = prompt(`What is your companion's name?`);
+// let companionType = prompt(`What kind of companion animal would you like to bring?`);
+// let companionName = prompt(`What is your companion's name?`);
 
-let firstLetter = companionName[0];
-firstLetter = firstLetter.toUpperCase();
-let otherLetters = companionName.slice(1);
-otherLetters = otherLetters.toLocaleLowerCase();
-companionName = firstLetter + otherLetters;
+// let firstLetter = companionName[0];
+// firstLetter = firstLetter.toUpperCase();
+// let otherLetters = companionName.slice(1);
+// otherLetters = otherLetters.toLocaleLowerCase();
+// companionName = firstLetter + otherLetters;
 
-firstLetter = companionType[0];
-firstLetter = firstLetter.toUpperCase();
-otherLetters = companionType.slice(1);
-otherLetters = otherLetters.toLocaleLowerCase();
-companionType = firstLetter + otherLetters;
+// firstLetter = companionType[0];
+// firstLetter = firstLetter.toUpperCase();
+// otherLetters = companionType.slice(1);
+// otherLetters = otherLetters.toLocaleLowerCase();
+// companionType = firstLetter + otherLetters;
 
-alert(`Cool, so you're bringing ${companionName} the ${companionType}.`);
+// alert(`Cool, so you're bringing ${companionName} the ${companionType}.`);
+
+alert(`NASA has an interior design team offering to outfit your space ship.`);
+alert(`You have a couple of options for the interior decor of your ship. Your options are:
+    A   Sleek, modern minimalism
+    B   Retro/vintage space age
+    C   Victorian-era steampunk
+`);
+
+let decorChoice = prompt(`Which would you like? (A, B, or C)`);
+decorChoice = decorChoice.toUpperCase();
+let decor;
+if (decorChoice === 'A') {
+    decor = 'modern minimalist';
+} else if (decorChoice === 'B') {
+    decor = 'retro/vintage space age';
+} else if (decorChoice === 'C') {
+    decor = 'victorian-era steampunk';
+}
 
