@@ -9,11 +9,13 @@
 // alert(`Yesterday, you received a call from your good friend at NASA,`);
 // alert(`They ned someone to go to Mars this weekend, and YOU'VE been choosen!!`);
 
-const userInput = prompt(`Are you excited? (Type Y or N)`);
+let excited = prompt(`Are you excited? (Type Y or N)`);
 
-if (userInput === `Y`) {
+excited = excited.toUpperCase();
+
+if (excited === `Y`) {
     alert(`I knew you'd say that. It's so cool that you're going to Mars!`);
-} else if (userInput === `N`) {
+} else if (excited === `N`) {
     alert(`Well, it's too late to back out now.`);
 }
 
