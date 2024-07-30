@@ -11,11 +11,12 @@ alert(`They ned someone to go to Mars this weekend, and YOU'VE been choosen!!`);
 
 let excited = prompt(`Are you excited? (Type Y or N)`);
 
-excited = excited.toUpperCase();
+excited = excited.toLowerCase().trim();
 
-if (excited === `Y`) {
+
+if (excited.startsWith('y')) {
     alert(`I knew you'd say that. It's so cool that you're going to Mars!`);
-} else if (excited === `N`) {
+} else if (excited.startsWith('n')) {
     alert(`Well, it's too late to back out now.`);
 }
 
