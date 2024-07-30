@@ -19,3 +19,15 @@ if (excited === `Y`) {
     alert(`Well, it's too late to back out now.`);
 }
 
+alert(`It's time to pack for your trip to Mars.`);
+let numSuitcases = prompt(`How many suitcases do you plan to bring?`);
+
+numSuitcases = Number(numSuitcases);
+
+if (numSuitcases > 2) {
+    alert(`That's way too many. You'll have to pack more lightly.`);
+    alert(`Please try to fit your stuff into 2 suitcases.`);
+} else {
+    alert(`Perfect. You'll certainly fit in the spaceship!`);
+}
+
