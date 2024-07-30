@@ -31,3 +31,8 @@ if (numSuitcases > 2) {
     alert(`Perfect. You'll certainly fit in the spaceship!`);
 }
 
+alert(`You're allowed to bring one companion animal with you.`);
+const companionType = prompt(`What kind of companion animal would you like to bring?`);
+const companionName = prompt(`What is your companion's name?`);
+alert(`Cool, so you're bringing ${companionName} the ${companionType}.`);
+
