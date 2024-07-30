@@ -43,12 +43,6 @@ let otherLetters = companionName.slice(1);
 otherLetters = otherLetters.toLocaleLowerCase();
 companionName = firstLetter + otherLetters;
 
-firstLetter = companionType[0];
-firstLetter = firstLetter.toUpperCase();
-otherLetters = companionType.slice(1);
-otherLetters = otherLetters.toLocaleLowerCase();
-companionType = firstLetter + otherLetters;
-
 alert(`Cool, so you're bringing ${companionName} the ${companionType}.`);
 
 alert(`NASA has an interior design team offering to outfit your space ship.`);
@@ -56,6 +50,8 @@ alert(`You have a couple of options for the interior decor of your ship. Your op
     A   Sleek, modern minimalism
     B   Retro/vintage space age
     C   Victorian-era steampunk
+    D   Farmhouse
+    E   Mediterranean
 `);
 
 let decorChoice = prompt(`Which would you like? (A, B, or C)`);
@@ -67,13 +63,30 @@ if (decorChoice === 'A') {
     decor = 'retro/vintage space age';
 } else if (decorChoice === 'C') {
     decor = 'victorian-era steampunk';
+} else if (decorChoice === 'D') {
+    decor = 'farmhouse';
+} else if (decorChoice === 'E') {
+    decor = 'mediterranean';
 }
 
-alert(`${username} and ${companionName}, surfing the celestial abyss, in a ${decor} spaceship.`);
+alert(`Ok, ${username}, you can bring one more companion animal if you'd like.`);
+let secondCompanionType = prompt(`What kind of animal will your second companion be?`);
+let secondCompanionName = prompt(`What is your second companion's name?`);
+
+firstLetter = secondCompanionName[0];
+firstLetter = firstLetter.toUpperCase();
+otherLetters = secondCompanionName.slice(1);
+otherLetters = otherLetters.toLocaleLowerCase();
+secondCompanionName = firstLetter + otherLetters;
+
+alert(`So ${secondCompanionName} the ${secondCompanionType} is coming too.`);
+alert(`But ${secondCompanionName} will probably need to ride in the cargo bay so that they don't get the ${decor} decor messy.`)
+
+alert(`${username} and ${companionName}, surfing the celestial abyss, in a ${decor} spaceship, With ${secondCompanionName} in the cargo bay.`);
 
 let timer = 5;
 while (timer > 0) {
     alert(`${timer}...`);
     timer -= 1;
 }
-alert(`*** LIFTOFF ***`);
+alert(`Houston, we have LIFTOFF!!!`);
